@@ -1,0 +1,94 @@
+.card {
+  height: 178px;
+  background: #EE5365;
+  transition: .8s;
+  border-radius: 8px;
+  box-shadow: black 7px 10px 12px -1px;
+  border-top: 120px solid pink;
+  border-left: 172px solid transparent;
+  border-right: 172px solid transparent;
+  transform-origin: top;
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 40px;
+  background: red;
+  top: 140px;
+  left: 175px;
+  animation: card 2s infinite;
+  border-radius: 50px 50px 0 0;
+  transform: rotateZ(56deg);
+}
+
+.card:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 40px;
+  background: red;
+  top: 140px;
+  left: 157px;
+  transform: rotateZ(-56deg);
+  border-radius: 50px 50px 0 0;
+}
+
+
+button {
+  padding: 15px 0;
+  margin: 60px 20px 20px 80px;
+  width: 50%;
+  border-radius: 18px;
+  border: none;
+  background: #E84457;
+  color: white;
+  transition: .2s;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.love {
+  height: 300px;
+  background: #FD7979;
+  position: absolute;
+  top: 68px;
+  width: 95%;
+  border-radius: 8px;
+  z-index: -2;
+  transition: 2s;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #84CCEE;
+}
+
+strong {
+  text-align: center;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.p {
+  animation: heart 5s infinite;
+}
+
+@keyframes heart {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(3);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
